@@ -34,6 +34,10 @@ Setup a conda environment for Spectre (copy and paste the following commands)
 conda create -n spectre python=3.10 pysam==0.22.0 numpy==1.24.3 pandas==2.0.1 matplotlib==3.7.1 scipy==1.10.1 -y
 conda activate spectre
 ```
+Next run in spectere directory:
+```bash
+pip install .   
+```
 Alternatively, you can use pip for installing the packages stored in the requirements txt
 
 ```bash
@@ -96,6 +100,8 @@ spectre RemoveNs \
   --output-file name_of_metadata_file.mdr
   
 ```
+Later when running spectre use the created DMR file `name_of_metadata_file.mdr` with the `--metadata` i.e., `--metadata /path/to/name_of_metadata_file.mdr`   
+
 ### Blacklists
 The blacklist is a supplementary file to the MDR file. It contains regions which should be ignored by Spectre.
 Those regions are based on gap data from USCS. 
