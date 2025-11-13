@@ -31,7 +31,7 @@ pip install dist/spectre_cnv-<VERSION>.tar.gz # replace <VERSION> with e.g. 0.2.
 
 Setup a conda environment for Spectre (copy and paste the following commands)
 ```bash
-conda create -n spectre python=3.10 pysam==0.22.0 numpy==1.24.3 pandas==2.0.1 matplotlib==3.7.1 scipy==1.10.1 -y
+conda create -c bioconda -n spectre python=3.10 pysam==0.22.0 numpy==1.24.3 pandas==2.0.1 matplotlib==3.7.1 scipy==1.10.1 -y
 conda activate spectre
 ```
 Alternatively, you can use pip for installing the packages stored in the requirements txt
